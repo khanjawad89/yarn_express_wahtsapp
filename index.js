@@ -27,6 +27,10 @@ const mimeExtensions = {
     'video/webm': '.webm', 'video/x-flv': '.flv', 'application/rtf': '.rtf', 'text/plain': '.txt',
     'application/json': '.json', 'application/xml': '.xml','audio/ogg; codecs=opus': '.ogg'
 };
+app.post('/',async(req, res)=>{
+	console.log('Express called');
+});
+
 
 app.post('/start-client', async (req, res) => {
     const { userId } = req.body;
