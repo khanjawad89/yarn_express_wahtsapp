@@ -28,7 +28,7 @@ const mimeExtensions = {
     'application/json': '.json', 'application/xml': '.xml','audio/ogg; codecs=opus': '.ogg'
 };
 app.post('/',async(req, res)=>{
-	console.log('Express called');
+	res.send('Hello, Express is working!');
 });
 
 
